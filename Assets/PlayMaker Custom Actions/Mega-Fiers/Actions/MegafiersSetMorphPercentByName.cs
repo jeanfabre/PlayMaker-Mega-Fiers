@@ -47,7 +47,7 @@ namespace HutongGames.PlayMaker.Actions
 				LogError("Missing MegaMorph!");
 				return;
 			}
-			
+
 			DoSetPercent();
 
 			if (!everyFrame)
@@ -70,10 +70,10 @@ namespace HutongGames.PlayMaker.Actions
 					MegaMorphChan _chan = megaMorph.GetChannel(name[i].Value);
 					if (_chan != null)
 					{
-						int _index = _chan.targ;
 						float _percent = percent[i].Value ;
-						if (_percent !=megaMorph.GetPercent(_index) )
-						megaMorph.SetPercent(_index,_percent );
+						if (_percent != _chan.Percent) {
+							_chan.Percent = _percent;
+						}
 					}
 				}
 				
