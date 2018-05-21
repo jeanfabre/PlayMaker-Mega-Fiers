@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.String)]
+	[ActionCategory("Mega-Fiers")]
 	[Tooltip("Link GameObjects to FFD box points.")]
 	public class LinkGameObjectToFfdPoints : FsmStateAction 
 	{
